@@ -1,0 +1,39 @@
+.angled-section {
+	height: 250px;
+  margin-bottom: 5px;
+	position: relative;
+  display: block;
+  width: 100%;
+	background-image: linear-gradient(#FF80AB, #ff5486);
+	transform: skewY(4deg);
+	transform-origin: top right;
+  z-index: 0;
+}
+
+.page-title {
+  position: absolute;
+  top: 0px;
+  transform: skewY(-4deg);
+  color: white;
+  margin-left: 225px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 120px;
+  padding-bottom: 30px;
+  font-family: Nunito;
+  z-index: 2;
+  font-size: 18px;
+}
+
+h1{
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.border-title {
+  width: 55px;
+  height: 8px;
+  background: #FFB2CC;
+  border-radius: 20px;
+  margin-top: 8px;
+}
