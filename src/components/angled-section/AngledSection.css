@@ -11,14 +11,14 @@
 }
 
 .page-title {
-  position: absolute;
+  position: fixed;
   top: 0px;
   transform: skewY(-4deg);
   color: white;
   margin-left: 225px;
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 120px;
+  padding-top: 8%;
   padding-bottom: 30px;
   font-family: Nunito;
   z-index: 2;

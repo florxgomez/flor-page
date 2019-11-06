@@ -3,16 +3,16 @@ import './Footer.css';
 
 const Footer = () => (
   <footer>
-  <div class="footer-items">
+  <div className="footer-items">
     <ul>
-      <li class="footer-item">
-        <i class="fa fa-linkedin"></i>
+      <li className="footer-item">
+        <i className="fa fa-linkedin"></i>
       </li>
-      <li class="footer-item">
-        <i class="fa fa-github-square"></i>
+      <li className="footer-item">
+        <i className="fa fa-github-square"></i>
       </li>
-    <li class="footer-item">
-      <i class="fa fa-codepen"></i>
+    <li className="footer-item">
+      <i className="fa fa-codepen"></i>
       </li>
   </ul>
   Made with &hearts; by Flor
