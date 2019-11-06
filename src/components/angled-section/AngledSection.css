@@ -1,7 +1,7 @@
 .angled-section {
 	height: 250px;
   margin-bottom: 5px;
-	position: relative;
+	position: absolute;
   display: block;
   width: 100%;
 	background-image: linear-gradient(#FF80AB, #ff5486);

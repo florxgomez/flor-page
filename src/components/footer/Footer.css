@@ -1,20 +1,21 @@
 footer {
-	text-align: center;
-	font-family: Nunito;
-	color: #717171;
-	font-size: 14px;
-	padding-left: 32px;
-  padding-right: 32px;
+  position: fixed;
+  width: 100%;
+  font-family: Nunito;
+  color: #717171;
+  font-size: 14px;
   background-color: #f1f1f1;
-  padding-top:10px;
+  padding-top: 20px;
   padding-bottom: 25px;
+  bottom: 0;
+  text-align: center;
   margin-left: 225px;
 }
 
 .footer-items ul {
-  display:flex;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: space-between;
 }
 
 .footer-item {
@@ -23,7 +24,7 @@ footer {
   color: #717171;
 }
 
-.footer-item:hover{
+.footer-item:hover {
   cursor: pointer;
   color: #313131;
 }
