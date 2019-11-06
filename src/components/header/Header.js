@@ -6,7 +6,7 @@ class Header extends React.Component {
 
   render(){
     return (
-      <header className='top'>
+      <header className={`top ${this.props.border ? 'top-border' : ''}`}>
     <h1>
       <Link className='home-link' to='/'>
         <img src='https://s.cdpn.io/profiles/user/2184540/80.jpg?1569736779' alt="Flor Icon"/>

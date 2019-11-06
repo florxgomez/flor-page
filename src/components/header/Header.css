@@ -3,15 +3,19 @@
   padding: 0;
 }
 
-header.top {
+.top {
   background-color: #282830;
   width: 225px;
   position: fixed;
   left: 0;
   bottom: 0;
   top: 0;
-  border-top: 3px solid #FF80AB;
   z-index: 99;
+  border-top: 3px solid #282830;
+}
+
+.top-border {
+    border-top: 3px solid #FF80AB;
 }
 
 .home-link {
