@@ -8,7 +8,7 @@ const aboutme = () => (
     <Header />
     <div className="container">
       <AngledSection title="About Me" />
-      <div className="content-body">I'm Florencia from Argentina</div>
+      <div className="content-body">Hi, I'm Florencia</div>
     </div>
   </Fragment>
 );

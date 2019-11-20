@@ -7,8 +7,16 @@ import {
   faLinkedin,
   faGithub
 } from "@fortawesome/free-brands-svg-icons";
+import "./burger.scss";
 
 class Header extends React.Component {
+  toggleMenu = () => {
+    console.log("Click");
+    const header = document.querySelector(".burger-header");
+    const menu = document.querySelector(".menu-header");
+    menu.classList.toggle("menu");
+    header.classList.toggle("menu-opened");
+  };
   render() {
     return (
       <header className={`top ${this.props.border ? "top-border" : ""}`}>
@@ -21,8 +29,16 @@ class Header extends React.Component {
             <span className="title">Florencia Gomez</span>
           </Link>
         </h1>
+        <div className="burger-header">
+          <div className="burger-container">
+            <div id="burger" onClick={this.toggleMenu}>
+              <div className="bar topBar" />
+              <div className="bar btmBar" />
+            </div>
+          </div>
+        </div>
         <nav className="nav-menu">
-          <ul id="menu-header">
+          <ul id="menu-header" class="menu-header">
             <li className="menu-item">
               <Link to="/aboutme">About Me</Link>
             </li>

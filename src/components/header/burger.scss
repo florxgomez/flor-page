@@ -1,0 +1,163 @@
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+
+    $menuItems: 5;        
+    
+    .burger-header {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            height: 50px;
+            width: 100%;
+            overflow: hidden;
+            transition: all 0.5s ease-out, background 1s ease-out;
+            transition-delay: 0.2s;
+            z-index: 1;
+            .burger-container {
+                position: relative;
+                display: inline-block;
+                height: 50px;
+                width: 50px;
+                cursor: pointer;
+                transform: rotate(0deg);
+                transition: all 0.3s $cubic;
+                user-select: none;
+                -webkit-tap-highlight-color: transparent;
+                #burger {
+                    width: 18px;
+                    height: 8px;
+                    position: relative;
+                    display: block;
+                    margin: -4px auto 0;
+                    top: 55%;
+                    .bar {
+                        width: 100%;
+                        height: 1px;
+                        display: block;
+                      
+                        background: #FFF;
+                        transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+                        transition-delay: 0s;
+                        &.topBar {
+                            transform: translateY(0px) rotate(0deg);
+                        }
+                        &.btmBar {
+                            transform: translateY(6px) rotate(0deg);
+                        }
+                    }
+                }
+            }
+            }
+            ul.menu {
+                position: relative;
+                display: block;
+                padding: 0px 48px 0;
+                list-style: none;
+                li.menu-item {
+                  display: block;
+                  position: relative;
+                  color: #FFF;
+                  font-weight: 100;
+                  text-decoration: none;
+                  font-size: 22px;
+                  line-height: 2.35;
+                  font-weight: 200;
+                  width: 100%;
+
+                    border-bottom: 1px solid #333;
+                    margin-top: 5px;
+                    transform: scale(1.15) translateY(-30px);
+                    opacity: 0;
+                    transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+                    @for $i from 1 through $menuItems {
+                        &:nth-child(#{$i}) {
+                            transition-delay: #{0.56 - ($i * 0.07)}s;
+                        }
+                    }
+                   
+                }
+            }
+            &.menu-opened {
+                height: 100%;
+                background-color: #282830;
+                transition: all 0.3s ease-in, background 0.5s ease-in;
+                transition-delay: 0.25s;
+
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(40, 40, 48, 0.9);
+                overflow: hidden;
+                z-index: 1;
+                height: 100vh;
+                
+                .burger-container {
+                    transform: rotate(90deg);
+                    #burger {
+                        .bar {
+                            transition: all 0.4s $cubic;
+                            transition-delay: 0.2s;
+                            &.topBar {
+                                transform: translateY(4px) rotate(45deg);
+                                
+                            }
+                            &.btmBar {
+                                transform: translateY(3px) rotate(-45deg);
+                               
+                            }
+                        }
+                    }
+                }
+                ul.menu {
+                    li.menu-item {
+                        transform: scale(1) translateY(0px);
+                        opacity: 1;
+                        z-index:2;
+                        @for $i from 1 through $menuItems {
+                            &:nth-child(#{$i}) {
+                                transition-delay: #{0.07 * $i+0.2}s;
+                            }
+                        }
+
+                        .link {
+                          display: block;
+                          position: relative;
+                          color: #FFF;
+                          font-weight: 100;
+                          text-decoration: none;
+                          font-size: 22px;
+                          line-height: 2.35;
+                          font-weight: 200;
+                          width: 100%;
+                      }
+                    }
+                }
+            }
+        }/*
+        .content {
+            padding: 67px 4% 0;
+            text-align: justify;
+            overflow: scroll;
+            max-height: 100%;
+            &::-webkit-scrollbar  {
+                display: none;
+            }
+            h2 {
+                margin-bottom: 0px;
+                letter-spacing: 1px;
+            }
+            img {
+                width: 95%;
+                position: relative;
+                display: block;
+                margin: 75px auto 75px;
+                &:nth-of-type(2) {
+                    margin: 75px auto;
+                }
+            }
+        }*/
+    
+      

@@ -21,7 +21,7 @@ const Footer = () => (
             <FontAwesomeIcon icon={faCodepen} />
           </li>
         </ul>
-        <div class="footer-text">Made with &hearts; by Flor</div>
+        <div className="footer-text">Made with &hearts; by Flor</div>
       </div>
     </div>
   </footer>
