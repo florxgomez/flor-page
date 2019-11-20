@@ -1,12 +1,9 @@
 .angled-section {
-	height: 250px;
+  height: 250px;
   margin-bottom: 5px;
-	position: absolute;
-  display: block;
-  width: 100%;
-	background-image: linear-gradient(#FF80AB, #ff5486);
-	transform: skewY(4deg);
-	transform-origin: top right;
+  background-image: linear-gradient(#ff80ab, #ff5486);
+  transform: skewY(4deg);
+  transform-origin: top right;
   z-index: 0;
 }
 
@@ -22,10 +19,9 @@
   padding-bottom: 30px;
   font-family: Nunito;
   z-index: 2;
-  font-size: 18px;
 }
 
-h1{
+h1 {
   font-weight: 400;
   font-size: 30px;
 }
@@ -33,7 +29,40 @@ h1{
 .border-title {
   width: 55px;
   height: 8px;
-  background: #FFB2CC;
+  background: #ffb2cc;
   border-radius: 20px;
   margin-top: 8px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .angled-section {
+    height: 200px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(#ff80ab, #ff5486);
+    transform: skewY(4deg);
+    transform-origin: top right;
+    z-index: 0;
+  }
+
+  .page-title {
+    transform: skewY(-4deg);
+    color: white;
+    font-family: Nunito;
+    z-index: 2;
+    margin-top: 20%;
+    margin-left: 0px;
+  }
+
+  .border-title {
+    width: 55px;
+    height: 8px;
+    background: #ffb2cc;
+    border-radius: 20px;
+    margin-top: 8px;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 25px;
+  }
 }

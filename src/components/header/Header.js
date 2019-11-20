@@ -18,7 +18,7 @@ class Header extends React.Component {
               src="https://s.cdpn.io/profiles/user/2184540/80.jpg?1569736779"
               alt="Flor Icon"
             />
-            <span>Florencia Gomez</span>
+            <span className="title">Florencia Gomez</span>
           </Link>
         </h1>
         <nav className="nav-menu">

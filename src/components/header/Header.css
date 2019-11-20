@@ -15,7 +15,7 @@
 }
 
 .top-border {
-    border-top: 3px solid #FF80AB;
+  border-top: 3px solid #ff80ab;
 }
 
 .home-link {
@@ -42,7 +42,7 @@ ul {
   padding: 10px;
   font-size: 18px;
   display: block;
-  font-family: 'Nunito';
+  font-family: "Nunito";
 }
 
 a {
@@ -53,11 +53,11 @@ a {
 
 a:hover {
   cursor: pointer;
-  color: #FF80AB;
+  color: #ff80ab;
 }
 
 a:active {
-  border-left: 2px solid #FF80AB;
+  border-left: 2px solid #ff80ab;
 }
 
 .header-social {
@@ -65,7 +65,7 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  color:#9B9B9B;
+  color: #9b9b9b;
   padding-left: 0;
 }
 
@@ -76,7 +76,7 @@ a:active {
 
 li.social-item:hover {
   cursor: pointer;
-  color: #FF80AB;
+  color: #ff80ab;
   transform: scale(1.5);
   transition: transform 0.2s;
 }
@@ -85,10 +85,39 @@ img {
   border-radius: 50%;
 }
 
-.home-link span {
+span {
   display: none;
-  margin-left: 8px;
-  text-transform: uppercase;
-  color: #e1e1e1;
-  font-size: 18px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  nav {
+    display: none;
+  }
+
+  .top {
+    background-color: #282830;
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    top: 0px;
+
+    border-top: 3px solid #282830;
+  }
+
+  span {
+    font-size: 20px;
+    display: block;
+    top: 30px;
+    text-transform: uppercase;
+    font-family: Nunito;
+    color: #e1e1e1;
+  }
+
+  img {
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 1.3em;
+  }
 }

@@ -8,19 +8,21 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => (
   <footer>
-    <div className="footer-items">
-      <ul>
-        <li className="footer-item">
-          <FontAwesomeIcon icon={faLinkedin} />
-        </li>
-        <li className="footer-item">
-          <FontAwesomeIcon icon={faGithub} />
-        </li>
-        <li className="footer-item">
-          <FontAwesomeIcon icon={faCodepen} />
-        </li>
-      </ul>
-      Made with &hearts; by Flor
+    <div class="container-footer">
+      <div className="footer-items">
+        <ul>
+          <li className="footer-item">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </li>
+          <li className="footer-item">
+            <FontAwesomeIcon icon={faGithub} />
+          </li>
+          <li className="footer-item">
+            <FontAwesomeIcon icon={faCodepen} />
+          </li>
+        </ul>
+        <div class="footer-text">Made with &hearts; by Flor</div>
+      </div>
     </div>
   </footer>
 );
