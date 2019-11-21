@@ -3,3 +3,12 @@
   flex-direction: column;
   min-height: 90vh;
 }
+
+.about-me {
+  margin-left: 32%;
+  font-size: 22px;
+  font-family: "Titillium Web";
+  text-align: left;
+  width: 45%;
+  line-height: 1.6em;
+}

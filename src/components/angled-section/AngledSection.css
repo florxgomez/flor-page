@@ -15,10 +15,13 @@
   margin-left: 225px;
   padding-left: 32px;
   padding-right: 32px;
-  padding-top: 8%;
+  padding-top: 7%;
   padding-bottom: 30px;
-  font-family: Nunito;
+  font-family: "Titillium Web";
+  letter-spacing: 1.5px;
+  font-weight: 600;
   z-index: 2;
+  font-size: 3em;
 }
 
 h1 {
@@ -32,6 +35,13 @@ h1 {
   background: #ffb2cc;
   border-radius: 20px;
   margin-top: 8px;
+}
+
+.angled-image {
+  width: 250px;
+  border-radius: 20%;
+  margin-top: 15px;
+  margin-left: 50px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {

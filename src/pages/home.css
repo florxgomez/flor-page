@@ -3,3 +3,12 @@
   flex-direction: column;
   min-height: 90vh;
 }
+
+.content-body {
+  margin-left: 250px;
+  text-align: center;
+  font-size: 32px;
+  font-family: Nunito;
+  color: rgb(245, 23, 103);
+  margin-top: 5%;
+}

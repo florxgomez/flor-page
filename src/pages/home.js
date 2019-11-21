@@ -7,7 +7,9 @@ const home = () => (
     <Header border />
     <div className="container">
       <div className="content-section">
-        <div className="content" />
+        <div className="content-body">
+          <h2>Hi, I'm Florencia</h2>
+        </div>
       </div>
     </div>
   </Fragment>

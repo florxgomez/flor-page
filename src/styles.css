@@ -5,19 +5,16 @@
 }
 
 body {
-    color: #4a4a4a;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .content {
-  display:flex;
-  flex-direction: column;    
+  display: flex;
+  flex-direction: column;
 }
 
 .content-section {
-  background: #f7f7f7;
   flex: 1;
 }
-

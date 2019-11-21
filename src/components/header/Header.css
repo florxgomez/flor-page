@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   height: 100%;
-  padding-top: 15px;
+  padding-top: 30px;
   justify-content: center;
 }
 
@@ -42,7 +42,8 @@ ul {
   padding: 10px;
   font-size: 18px;
   display: block;
-  font-family: "Nunito";
+  font-family: "Titillium Web";
+  letter-spacing: 1.5px;
 }
 
 a {
@@ -82,7 +83,7 @@ li.social-item:hover {
 }
 
 img {
-  border-radius: 50%;
+  border-radius: 20%;
 }
 
 span {
@@ -115,7 +116,7 @@ span {
 
   img {
     display: none;
-    border-radius: 50%;
+    border-radius: 20%;
     position: absolute;
     left: 300px;
     top: 2px;
