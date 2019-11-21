@@ -57,10 +57,14 @@ class Header extends React.Component {
               <FontAwesomeIcon icon={faLinkedin} />
             </li>
             <li className="social-item">
-              <FontAwesomeIcon icon={faGithub} />
+              <a href="https://github.com/florxgomez" target="_blank">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
             </li>
             <li className="social-item">
-              <FontAwesomeIcon icon={faCodepen} />
+              <a href="https://codepen.io/greenflor_" target="_blank">
+                <FontAwesomeIcon icon={faCodepen} />
+              </a>
             </li>
           </ul>
         </nav>
