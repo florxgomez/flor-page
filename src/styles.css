@@ -18,3 +18,22 @@ body {
 .content-section {
   flex: 1;
 }
+
+a {
+  padding: 10px;
+  font-size: 18px;
+  display: block;
+  font-family: "Titillium Web";
+  letter-spacing: 1.5px;
+}
+
+a {
+  color: #9b9b9b;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #ff80ab;
+}

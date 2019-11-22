@@ -5,10 +5,24 @@
 }
 
 .about-me {
-  margin-left: 32%;
+  margin-left: 30%;
   font-size: 22px;
   font-family: "Titillium Web";
   text-align: left;
   width: 45%;
   line-height: 1.6em;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .about-me {
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "Titillium Web";
+    text-align: center;
+    width: 100vw;
+    line-height: 2em;
+    margin-top: 45%;
+    height: 50vh;
+  }
 }

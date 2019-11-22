@@ -12,7 +12,7 @@ const aboutme = () => (
       <div class="about-me">
         <p>
           👋 Hello there, my name is Florencia. <br />
-          I'm a self-thought Full-Stack JavaScript Web Developer <br /> with a
+          I'm a self-thought Full-Stack JavaScript Web Developer with a
           background in Applications Support based in Argentina 🇦🇷
           <br />I have a degree in Information Systems Engineering 👩🏻‍💻
           <br />

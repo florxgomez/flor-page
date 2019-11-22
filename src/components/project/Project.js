@@ -5,44 +5,91 @@ import {
   faJs,
   faReact,
   faNodeJs,
-  faCss3
+  faCss3,
+  faBootstrap
 } from "@fortawesome/free-brands-svg-icons";
+import firebaseIcon from "../../images/icons/firebase.png";
+import reduxIcon from "../../images/icons/redux.png";
+import materialIcon from "../../images/icons/material-ui-logo.png";
+
 import "./Project.css";
 
-const Project = props => (
-  <Fragment>
-    <div class="tech">
-      <FontAwesomeIcon
-        icon={faJs}
-        size="lg"
-        style={{ color: "rgb(240, 219, 79)" }}
-      />
-      <FontAwesomeIcon
-        icon={faReact}
-        size="lg"
-        style={{ color: "rgb(97, 219, 251)" }}
-      />
-      <FontAwesomeIcon
-        icon={faNodeJs}
-        size="lg"
-        style={{ color: "rgb(60, 135, 58)" }}
-      />
-    </div>
-    <h2>{props.title}</h2>
+const Project = props => {
+  const renderFA = icon => {
+    switch (icon) {
+      case "fajs":
+        return faJs;
+      case "fareact":
+        return faReact;
+      case "fanode":
+        return faNodeJs;
+      case "facss":
+        return faCss3;
+      case "faboot":
+        return faBootstrap;
+      default:
+        return null;
+    }
+  };
 
-    <p>{props.desc}</p>
-    <div class="box-links">
-      <a href="https://social-interact.herokuapp.com/" class="box-link">
-        <FontAwesomeIcon icon={faGlobe} size="lg" />
-      </a>
-      <a
-        href="https://github.com/florxgomez/social-app-client"
-        class="box-link"
-      >
-        <FontAwesomeIcon icon={faCode} size="lg" />
-      </a>
-    </div>
-  </Fragment>
-);
+  const renderOtherIcon = el => {
+    switch (el.icon) {
+      case "firebase":
+        return firebaseIcon;
+      case "redux":
+        return reduxIcon;
+      case "material":
+        return materialIcon;
+      default:
+        return null;
+    }
+  };
+
+  const renderIcons = icons =>
+    icons.map(el =>
+      el.icon.startsWith("fa") ? (
+        <div class="icon">
+          <FontAwesomeIcon
+            icon={renderFA(el.icon)}
+            size="lg"
+            style={{ color: `${el.color}` }}
+          />
+        </div>
+      ) : (
+        <div class="icon">
+          {console.log(renderOtherIcon(el))}
+          <img
+            class={`${el.icon}-size`}
+            src={renderOtherIcon(el)}
+            alt={el.icon}
+          />
+        </div>
+      )
+    );
+
+  const { title, desc, stack, website, codeUrl } = props;
+
+  return (
+    <Fragment>
+      <div class="box">
+        <div class="tech">{renderIcons(stack)}</div>
+        <div class="box-title">
+          <h2>{title}</h2>
+        </div>
+        <div class="box-desc">
+          <p>{desc}</p>
+        </div>
+        <div class="box-links">
+          <a href={website} class="box-link" target="_blank">
+            <FontAwesomeIcon icon={faGlobe} size="lg" />
+          </a>
+          <a href={codeUrl} class="box-link" target="_blank">
+            <FontAwesomeIcon icon={faCode} size="lg" />
+          </a>
+        </div>
+      </div>
+    </Fragment>
+  );
+};
 
 export default Project;

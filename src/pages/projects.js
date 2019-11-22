@@ -19,16 +19,15 @@ const projects = () => (
           </p>
         </div>
         <section class="boxes">
-          {projectList.map(proj => (
-            <div class="box">
-              <Project title={proj.title} />
-            </div>
+          {projectList.map(project => (
+            <Project
+              title={project.title}
+              desc={project.desc}
+              stack={project.stack}
+              website={project.website}
+              codeUrl={project.codeUrl}
+            />
           ))}
-          <div class="box">
-            <Project title="" desc="" />
-          </div>
-          <div class="box" />
-          <div class="box" />
         </section>
       </div>
     </div>

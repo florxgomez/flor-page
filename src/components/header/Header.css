@@ -46,18 +46,18 @@ ul {
   letter-spacing: 1.5px;
 }
 
-a {
+.menu-item a {
   color: #9b9b9b;
   text-decoration: none;
   cursor: pointer;
 }
 
-a:hover {
+.menu-item a:hover {
   cursor: pointer;
   color: #ff80ab;
 }
 
-a:active {
+.menu-item a:active {
   border-left: 2px solid #ff80ab;
 }
 
@@ -99,27 +99,20 @@ span {
     background-color: #282830;
     width: 100%;
     position: fixed;
-    height: 60px;
-    top: 0px;
-
+    height: 80px;
     border-top: 3px solid #282830;
   }
 
   span {
     font-size: 20px;
-    display: block;
-
+    display: inline;
     text-transform: uppercase;
-    font-family: Nunito;
+    font-family: "Titillium Web";
     color: #e1e1e1;
+    line-height: 0.2;
   }
 
   img {
     display: none;
-    border-radius: 20%;
-    position: absolute;
-    left: 300px;
-    top: 2px;
-    width: 2em;
   }
 }
