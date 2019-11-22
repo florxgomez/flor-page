@@ -5,18 +5,38 @@
 }
 
 .contact {
-  margin-left: 30%;
+  margin-left: 25%;
   margin-top: 20px;
   font-size: 22px;
   font-family: "Titillium Web";
   text-align: left;
-  width: 50%;
   line-height: 1.6em;
+}
+
+.contact ul {
+  list-style: none;
+  font-size: 20px;
+  margin-left: 20%;
+}
+
+.contact li a {
+  margin: 20px;
+  color: #282830;
+}
+
+.contact li a:hover {
+  cursor: pointer;
+  color: #ff80ab;
 }
 
 .email {
   display: inline;
   text-decoration: underline;
+}
+
+.contact-header-social {
+  display: flex;
+  margin-top: 20px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -37,13 +57,10 @@
     color: #282830;
     text-decoration: underline;
     text-transform: lowercase;
+  }
 
-    }
-    
-    .email:hover {
-      cursor: pointer;
-      color: #ff5486;
-    }
+  .email:hover {
+    cursor: pointer;
+    color: #ff5486;
   }
 }
-

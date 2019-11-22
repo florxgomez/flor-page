@@ -1,5 +1,5 @@
-#menu-header {
-  margin-top: 15px;
+#menu {
+  margin-top: 0px;
   padding: 0;
 }
 
@@ -22,15 +22,17 @@
   display: flex;
   align-items: center;
   height: 100%;
-  padding-top: 30px;
+  padding-top: 20px;
   justify-content: center;
+  text-decoration: none;
 }
 
-nav {
+.nav-menu {
   display: block;
+  position: relative;
 }
 
-ul {
+.nav-menu ul {
   list-style: none;
 }
 
@@ -67,12 +69,26 @@ ul {
   justify-content: center;
   align-items: center;
   color: #9b9b9b;
-  padding-left: 0;
 }
 
 .social-item {
   margin: 10px;
   font-size: 20px;
+}
+
+.social-item a {
+  padding: 0;
+  font-size: 18px;
+  font-family: "Titillium Web";
+}
+
+.social-item a:visited:hover {
+  cursor: pointer;
+  color: #ff80ab;
+}
+
+.social-item a:visited {
+  color: #9b9b9b;
 }
 
 li.social-item:hover {
@@ -82,37 +98,171 @@ li.social-item:hover {
   transition: transform 0.2s;
 }
 
-img {
-  border-radius: 20%;
+.home-link .icon {
+  font-size: 40px;
 }
 
-span {
+.title {
+  display: none;
+}
+
+input {
   display: none;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  nav {
-    display: none;
-  }
-
   .top {
     background-color: #282830;
     width: 100%;
     position: fixed;
-    height: 80px;
+    height: 70px;
     border-top: 3px solid #282830;
   }
 
-  span {
+  .title {
     font-size: 20px;
-    display: inline;
+    display: block;
     text-transform: uppercase;
     font-family: "Titillium Web";
     color: #e1e1e1;
-    line-height: 0.2;
+    line-height: 0.3;
+    position: relative;
+    top: 11px;
+    letter-spacing: 0.05em;
   }
 
-  img {
+  .heading a:visited {
+    text-decoration: none;
+  }
+
+  .home-link .icon {
+    display: none;
+  }
+
+  .menu-item a:active {
+    border-left: none;
+  }
+
+  /*Burger*/
+
+  #menuToggle {
+    display: block;
+    position: relative;
+    left: 24px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  /*
+ * Just a quick hamburger
+ */
+  #menuToggle span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #e1e1e1;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #e1e1e1;
+  }
+
+  /*
+ * But let's hide the middle one.
+ */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+ * Ohyeah and the last one should go the other direction
+ */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+  #menu {
+    position: absolute;
+    width: 480px;
+    margin: -100px 0 0 -50px;
+    padding: 80px;
+    padding-top: 120px;
+
+    background: #282830;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu li {
+    padding: 10px 0;
+    margin-right: 50px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  /*
+ * And let's slide it in from the left
+ */
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
+  .header-social {
     display: none;
   }
 }

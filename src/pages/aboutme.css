@@ -5,7 +5,7 @@
 }
 
 .about-me {
-  margin-left: 30%;
+  margin-left: 35%;
   font-size: 22px;
   font-family: "Titillium Web";
   text-align: left;
@@ -24,5 +24,9 @@
     line-height: 2em;
     margin-top: 45%;
     height: 50vh;
+  }
+
+  .angled-image {
+    display: block;
   }
 }

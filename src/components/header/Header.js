@@ -7,51 +7,41 @@ import {
   faLinkedin,
   faGithub
 } from "@fortawesome/free-brands-svg-icons";
-import "./burger.scss";
 
 class Header extends React.Component {
-  toggleMenu = () => {
-    console.log("Click");
-    const header = document.querySelector(".burger-header");
-    const menu = document.querySelector(".menu-header");
-    menu.classList.toggle("menu");
-    header.classList.toggle("menu-opened");
-  };
   render() {
     return (
       <header className={`top ${this.props.border ? "top-border" : ""}`}>
-        <h1>
+        <h1 class="heading">
           <Link className="home-link" to="/">
-            <img
-              src="https://s.cdpn.io/profiles/user/2184540/80.jpg?1569736779"
-              alt="Flor Icon"
-            />
-            <span className="title">Florencia Gomez</span>
+            <span className="icon" role="img" aria-label="flower">
+              🌸
+            </span>
+            <div className="title">Florencia Gomez </div>
           </Link>
         </h1>
-        <div className="burger-header">
-          <div className="burger-container">
-            <div id="burger" onClick={this.toggleMenu}>
-              <div className="bar topBar" />
-              <div className="bar btmBar" />
-            </div>
-          </div>
-        </div>
+
         <nav className="nav-menu">
-          <ul id="menu-header" class="menu-header">
-            <li className="menu-item">
-              <Link to="/aboutme">About Me</Link>
-            </li>
-            <li className="menu-item">
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li className="menu-item">
-              <Link to="/skills">My Skills</Link>
-            </li>
-            <li className="menu-item">
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
+          <div id="menuToggle">
+            <span />
+            <span />
+            <span />
+            <input type="checkbox" />
+            <ul id="menu" class="menu-header">
+              <li className="menu-item">
+                <Link to="/aboutme">About Me</Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/skills">My Skills</Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
           <ul className="header-social">
             <li className="social-item">
               <FontAwesomeIcon icon={faLinkedin} />

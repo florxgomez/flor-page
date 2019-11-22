@@ -8,7 +8,121 @@
   margin-left: 250px;
   text-align: center;
   font-size: 32px;
-  font-family: Nunito;
-  color: rgb(245, 23, 103);
+  font-family: "Titillium Web";
+  color: #ff5486;
   margin-top: 5%;
+}
+
+.home {
+  border-top: 8px solid #ff5486;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.home ul {
+  list-style: none;
+}
+
+.home-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.home-links a {
+  margin-top: 5%;
+  font-size: 30px;
+  color: #282830;
+  text-decoration: none;
+}
+
+.home-links li {
+  cursor: pointer;
+  padding: 30px;
+  /*border-radius: 20%;*/
+  transition: all 0.3s linear;
+  box-shadow: 0 0 3px #ccc;
+  width: 200px;
+  height: 180px;
+  border: 2px solid transparent;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+}
+
+.home-links li:hover {
+  border: 2px solid #ff5486;
+  color: #282830;
+  /*-webkit-box-shadow: rgba(40, 40, 48, 0.8) 0px 5px 15px,
+    inset rgba(40, 40, 48, 0.15) 0px -10px 20px;
+  -moz-box-shadow: rgba(40, 40, 48, 0.8) 0px 5px 15px,
+    inset rgba(40, 40, 48, 0.15) 0px -10px 20px;
+  -o-box-shadow: rgba(40, 40, 48, 0.8) 0px 5px 15px,
+    inset rgba(40, 40, 48, 0.15) 0px -10px 20px;
+  box-shadow: rgba(40, 40, 48, 0.8) 0px 5px 15px,
+    inset rgba(40, 40, 48, 0.15) 0px -10px 20px;*/
+}
+
+.home-links li span {
+  font-size: 40px;
+  display: block;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .home {
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "Titillium Web";
+    text-align: center;
+    width: 100vw;
+    line-height: 2em;
+    margin-top: 45%;
+  }
+
+  .home {
+    border-top: 8px solid #ff80ab;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .content-body {
+    margin-left: 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Titillium Web";
+    color: #ff80ab;
+    margin-top: 30%;
+  }
+
+  .home-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .home-links a {
+    color: #282830;
+    font-size: 22px;
+    margin-top: 5%;
+  }
+
+  .home-links li {
+    cursor: pointer;
+    transition: all 0.3s linear;
+    box-shadow: 0 0 3px #ccc;
+    width: 170px;
+    height: 140px;
+    border: 2px solid transparent;
+    -webkit-transition: border 0.3s ease;
+    transition: border 0.3s ease;
+    margin: 5px;
+  }
+
+  .home-links li span {
+    font-size: 40px;
+    display: block;
+    margin-top: 20%;
+  }
 }

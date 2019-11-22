@@ -3,3 +3,47 @@
   flex-direction: column;
   min-height: 90vh;
 }
+
+.skills {
+  margin-left: 25%;
+  font-size: 22px;
+  font-family: "Titillium Web";
+  line-height: 1.6em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  list-style: none;
+  width: 400px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .skills {
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "Titillium Web";
+    text-align: center;
+    line-height: 1.6em;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40%;
+  }
+
+  .skills h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .skills ul {
+    list-style: none;
+    width: 200px;
+  }
+}

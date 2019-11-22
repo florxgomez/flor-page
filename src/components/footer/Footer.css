@@ -11,6 +11,7 @@ footer {
   justify-content: center;
   align-items: space-between;
   margin-left: 225px;
+  list-style: none;
 }
 
 .footer-item {
