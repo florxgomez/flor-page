@@ -1,5 +1,5 @@
 footer {
-  font-family: "Titillium Web";
+  font-family: 'Titillium Web';
   color: #717171;
   font-size: 14px;
   background-color: #f1f1f1;
@@ -47,4 +47,8 @@ footer {
     margin-left: 0;
   }
 
+  .footer-item li a:visited {
+    cursor: pointer;
+    color: #717171;
+  }
 }
