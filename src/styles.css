@@ -19,3 +19,7 @@ body {
 .content-section {
   flex: 1;
 }
+
+a:visited{
+  text-decoration: none;
+}
