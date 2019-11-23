@@ -16,18 +16,19 @@ class Header extends React.Component {
         <h1 class="heading">
           <Link className="home-link" to="/">
             <div className="icon" role="img" aria-label="flower">
-              <img src={flower}/>
+              <img src={flower} />
             </div>
             <div className="title">Florencia Gomez </div>
           </Link>
         </h1>
 
-        <nav className="nav-menu">
+        <nav role="navigation" className="nav-menu">
           <div id="menuToggle">
-            <span />
-            <span />
-            <span />
             <input type="checkbox" />
+            <span />
+            <span />
+            <span />
+
             <ul id="menu" class="menu-header">
               <li className="menu-item">
                 <Link to="/aboutme">About Me</Link>
