@@ -25,7 +25,7 @@ footer {
 }
 .footer-items a:visited {
   cursor: pointer;
-  color: #717171;
+  color: #ff80ab;
 }
 
 .footer-text {
@@ -46,4 +46,8 @@ footer {
     margin-left: 0px;
   }
 
+  .footer-items a:visited {
+    cursor: pointer;
+    color: #ff80ab;
+  }
 }
