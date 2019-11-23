@@ -23,7 +23,7 @@ footer {
   cursor: pointer;
   color: #313131;
 }
-.footer-items a:visited {
+.footer-items a:visited:before  {
   cursor: pointer;
   color: #ff80ab;
 }
@@ -46,8 +46,4 @@ footer {
     margin-left: 0px;
   }
 
-  .footer-items a:visited {
-    cursor: pointer;
-    color: #ff80ab;
-  }
 }
