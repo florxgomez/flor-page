@@ -98,8 +98,8 @@ li.social-item:hover {
   transition: transform 0.2s;
 }
 
-.home-link .icon {
-  font-size: 40px;
+.home-link .icon img {
+  width: 40px;
 }
 
 .title {

@@ -20,9 +20,13 @@ footer {
   color: #717171;
 }
 
-.footer-item:hover {
+.footer-item a:hover {
   cursor: pointer;
   color: #313131;
+}
+.footer-item a:visited {
+  cursor: pointer;
+  color: #717171;
 }
 
 .footer-text {
@@ -43,8 +47,4 @@ footer {
     margin-left: 0;
   }
 
-  .footer-item:hover {
-    cursor: pointer;
-    color: #313131;
-  }
 }
