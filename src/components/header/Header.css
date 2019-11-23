@@ -120,12 +120,12 @@ input {
   }
 
   .title {
-    font-size: 20px;
+    font-size: 22px;
     display: block;
     text-transform: uppercase;
     font-family: "Titillium Web";
     color: #e1e1e1;
-    line-height: 0.3;
+    line-height: 0.1;
     position: relative;
     top: 11px;
     letter-spacing: 0.05em;
