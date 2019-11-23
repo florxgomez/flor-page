@@ -20,10 +20,6 @@ body {
   flex: 1;
 }
 
-a:visited{
-  color: #ff80ab;
-}
-
 a[x-apple-data-detectors] {
   color: inherit !important;
   text-decoration: none !important;
