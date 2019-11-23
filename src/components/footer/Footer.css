@@ -23,7 +23,7 @@ footer {
   cursor: pointer;
   color: #313131;
 }
-.footer-items a:visited:before  {
+.footer-items a:visited  {
   cursor: pointer;
   color: #ff80ab;
 }
