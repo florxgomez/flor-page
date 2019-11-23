@@ -12,7 +12,7 @@ const Footer = () => (
       <div className="footer-items">
         <ul>
           <li className="footer-item">
-            <a
+            <a className="footer-link"
               href="https://www.linkedin.com/in/florenciaggomez/"
               target="_blank"
             >

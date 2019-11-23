@@ -2,14 +2,13 @@ import React, { Fragment } from "react";
 import AngledSection from "../components/angled-section/AngledSection";
 import Header from "../components/header/Header";
 import "./skills.css";
-import love from "../images/love.png";
 
 const skills = () => (
   <Fragment>
     <Header />
     <div className="container">
       <div className="content-section">
-        <AngledSection title="My Skills" image={love} />
+        <AngledSection title="My Skills" />
         <div class="skills">
           <div class="box">
             <h3>Programming Languages</h3>

@@ -17,14 +17,13 @@ footer {
 .footer-item {
   margin: 20px;
   font-size: 20px;
-  color: #717171;
 }
 
 .footer-item a:hover {
   cursor: pointer;
   color: #313131;
 }
-.footer-item a:visited {
+.footer-items a:visited {
   cursor: pointer;
   color: #717171;
 }
@@ -43,12 +42,8 @@ footer {
   .footer-items ul {
     display: flex;
     justify-content: center;
-    align-items: space-between;
-    margin-left: 0;
+    align-items: center;
+    margin-left: 0px;
   }
 
-  .footer-item li a:visited {
-    cursor: pointer;
-    color: #717171;
-  }
 }

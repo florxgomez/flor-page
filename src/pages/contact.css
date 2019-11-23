@@ -29,6 +29,11 @@
   color: #ff80ab;
 }
 
+.contact li a:visited {
+  cursor: pointer;
+  color: #282830;
+}
+
 .email {
   display: inline;
   text-decoration: underline;
