@@ -234,8 +234,9 @@ input {
     position: absolute;
     width: 480px;
     margin: -100px 0 0 -50px;
-    padding: 80px;
+    padding: 100px;
     padding-top: 120px;
+    height: 800px;
 
     background: #282830;
     list-style-type: none;
