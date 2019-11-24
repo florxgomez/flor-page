@@ -11,12 +11,12 @@ const aboutme = () => (
       <AngledSection title="About Me" image={florImage} desc="Flor" />
       <div class="about-me">
         <p>
-          👋 Hello there, my name is Florencia. <br />
-          I'm a self-thought Full-Stack JavaScript Web Developer with a
-          background in Applications Support based in Argentina 🇦🇷
-          <br />I have a degree in Information Systems Engineering 👩🏻‍💻
+          <span role="img" aria-label="hand">👋</span> Hello there, my name is Florencia. <br />
+          I'm a self-taught Full-Stack JavaScript Web Developer with a
+          background in Applications Support based in Argentina <span role="img" aria-label="Argentina flag">🇦🇷</span>
+          <br />I have a degree in Information Systems Engineering <span role="img" aria-label="programming">👩🏻‍💻</span>
           <br />
-          When I'm not coding, I like to play video games and watch movies 🎮 🎬
+          When I'm not coding, I like to play video games and watch movies <span role="img" aria-label="videogames">🎮 </span><span role="img" aria-label="movies">🎬</span>
         </p>
       </div>
     </div>

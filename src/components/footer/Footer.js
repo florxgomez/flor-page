@@ -17,6 +17,7 @@ const Footer = () => (
               href="https://www.linkedin.com/in/florenciaggomez/"
               style={{ color: '#313131' }}
               target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -25,6 +26,7 @@ const Footer = () => (
             <a
               href="https://github.com/florxgomez"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ color: '#313131' }}
             >
               <FontAwesomeIcon icon={faGithub} />
@@ -34,6 +36,7 @@ const Footer = () => (
             <a
               href="https://codepen.io/greenflor_"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ color: '#313131' }}
             >
               <FontAwesomeIcon icon={faCodepen} />

@@ -16,7 +16,7 @@ class Header extends React.Component {
         <h1 class="heading">
           <Link className="home-link" to="/">
             <div className="icon" role="img" aria-label="flower">
-              <img src={flower} />
+              <img src={flower} alt="flower-icon"/>
             </div>
             <div className="title">Florencia Gomez </div>
           </Link>
@@ -49,17 +49,18 @@ class Header extends React.Component {
               <a
                 href="https://www.linkedin.com/in/florenciaggomez/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>
             <li className="social-item">
-              <a href="https://github.com/florxgomez" target="_blank">
+              <a href="https://github.com/florxgomez" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>
             <li className="social-item">
-              <a href="https://codepen.io/greenflor_" target="_blank">
+              <a href="https://codepen.io/greenflor_" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faCodepen} />
               </a>
             </li>

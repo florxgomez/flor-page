@@ -80,10 +80,10 @@ const Project = props => {
           <p>{desc}</p>
         </div>
         <div class="box-links">
-          <a href={website} class="box-link" target="_blank">
+          <a href={website} class="box-link" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGlobe} size="lg" />
           </a>
-          <a href={codeUrl} class="box-link" target="_blank">
+          <a href={codeUrl} class="box-link" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faCode} size="lg" />
           </a>
         </div>

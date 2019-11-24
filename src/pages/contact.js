@@ -24,17 +24,17 @@ const contact = () => (
           </p>
           <ul className="contact-header-social">
             <li className="contact-social-item">
-              <a href="https://github.com/florxgomez" target="_blank">
+              <a href="https://github.com/florxgomez" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} size="2x" />
               </a>
             </li>
             <li className="contact-social-item">
-              <a href="https://github.com/florxgomez" target="_blank">
+              <a href="https://github.com/florxgomez" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
             </li>
             <li className="contact-social-item">
-              <a href="https://codepen.io/greenflor_" target="_blank">
+              <a href="https://codepen.io/greenflor_" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faCodepen} size="2x" />
               </a>
             </li>
