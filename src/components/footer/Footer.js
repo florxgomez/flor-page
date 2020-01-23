@@ -45,7 +45,7 @@ const Footer = () => (
         </ul>
         <div className="footer-text">
           {' '}
-          <p>Florencia Gomez &copy; 2019</p>
+          <p>Florencia Gomez &copy; 2020</p>
         </div>
       </div>
     </div>
