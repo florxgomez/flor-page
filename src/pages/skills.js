@@ -13,7 +13,8 @@ const skills = () => (
           <div class="box">
             <h3>Programming Languages</h3>
             <ul>
-              <li>JavaScript</li>
+              <li>JavaScript / TypeScript</li>
+              <li>Python</li>
               <li>Java</li>
               <li>C</li>
             </ul>

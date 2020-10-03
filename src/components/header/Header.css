@@ -44,7 +44,7 @@
   padding: 10px;
   font-size: 18px;
   display: block;
-  font-family: "Titillium Web";
+  font-family: 'Titillium Web';
   letter-spacing: 1.5px;
 }
 
@@ -79,7 +79,9 @@
 .social-item a {
   padding: 0;
   font-size: 18px;
-  font-family: "Titillium Web";
+  font-family: 'Titillium Web';
+  color: #9b9b9b;
+  cursor: pointer;
 }
 
 .social-item a:visited:hover {
@@ -123,7 +125,7 @@ input {
     font-size: 22px;
     display: block;
     text-transform: uppercase;
-    font-family: "Titillium Web";
+    font-family: 'Titillium Web';
     color: #e1e1e1;
     line-height: 0.1;
     position: relative;
