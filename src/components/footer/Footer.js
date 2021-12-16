@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCodepen,
   faLinkedin,
-  faGithub
-} from '@fortawesome/free-brands-svg-icons';
+  faGithub,
+} from '@fontawesome/free-brands-svg-icons';
 const Footer = () => (
   <footer>
     <div class="container-footer">
