@@ -5,7 +5,7 @@ import {
   faCodepen,
   faLinkedin,
   faGithub,
-} from '@fontawesome/free-brands-svg-icons';
+} from '@fortawesome/free-brands-svg-icons';
 const Footer = () => (
   <footer>
     <div class="container-footer">
@@ -45,7 +45,7 @@ const Footer = () => (
         </ul>
         <div className="footer-text">
           {' '}
-          <p>Florencia Gomez &copy; 2020</p>
+          <p>Florencia Gomez &copy; 2022</p>
         </div>
       </div>
     </div>
